@@ -1,0 +1,28 @@
+{
+  "name": "dsh-cam-window",
+  "version": "0.1.0",
+  "description": "ESP32-CAM 实时视频弹窗：当 mqtt-hub 摄像头实时流（stream）运行时，自动在当前 DSH 窗口弹出画中画视频，流停止自动关闭",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}

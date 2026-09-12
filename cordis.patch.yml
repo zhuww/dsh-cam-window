@@ -1,0 +1,4 @@
+# dsh-cam-window bundle：纯 client 插件（视频弹窗），无 host 服务。
+- insert:
+    - id: cam-window
+      name: dsh-cam-window

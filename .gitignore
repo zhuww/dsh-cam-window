@@ -1,0 +1,24 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+.pio/
+.pio-home/
+managed_components/
+__pycache__/
+*.pyc
+.venv/
+
+# 密钥与本地配置（模板文件 .env.example 例外）
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+
+# 日志与系统文件
+*.log
+.DS_Store
+Thumbs.db
